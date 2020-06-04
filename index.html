@@ -6,12 +6,18 @@
   </head>
     <body>
       <h1>Flash Cards</h1>
-        <div class="controls">
-          <button onclick="addCard()">Add a card</button>
-          <button onclick="editCard()">Edit a card</button>
-          <button onclick="deleteCard()">delete a card</button>
-        </div>
-
+    
+        <form id="cardForm">
+          <input type="text" id="cardInput">
+          <button type="button" onclick="addACard()">Add Card</button>
+          <button onclick="editACard()">Edit a card</button>
+          <button onclick="deleteACard()">delete a card</button>
+        </form>
+    
+        <ul id="cardList"></ul>
+        
+        <div id="popup"></div>
+        <div id="showCards"></div>
       <script src="index.js"></script>
     </body>
 </html>
